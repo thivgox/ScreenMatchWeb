@@ -30,8 +30,9 @@ public class Serie {
     private String poster;
     @Enumerated(EnumType.STRING)
     private Categoria genero;
-    @OneToMany(mappedBy = "serie")
+    @OneToMany(mappedBy = "serie", cascade =  CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Episodios> episodios = new ArrayList<>();
+
 
     public Serie(){}
     public Serie(DadosSerie dadosSerie){
@@ -55,7 +56,9 @@ public class Serie {
     }
 
     public void setEpisodios(List<Episodios> episodios) {
+        episodios.forEach(e -> e.setSerie(this));
         this.episodios = episodios;
+
     }
 
 
@@ -143,7 +146,8 @@ public class Serie {
                 ", atores='" + atores + '\'' +
                 ", sinopse='" + sinopse + '\'' +
                 ", poster='" + poster + '\'' +
-                ", genero=" + genero +
-                '}';
+                ", genero=" + genero +  '\''+
+                ",episodios = '" + episodios + '\'';
+
     }
 }

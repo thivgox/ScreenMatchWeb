@@ -43,6 +43,8 @@ public class Episodios {
     @ManyToOne
     private Serie serie;
 
+    public Episodios() {}
+
 
     public void setId(Long id) {
         this.id = id;
