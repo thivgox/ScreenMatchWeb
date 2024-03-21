@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ProjetoSpring-screenmatch-v2.iml" filepath="$PROJECT_DIR$/.idea/ProjetoSpring-screenmatch-v2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProjetoSpring-screenmatch-v2/screenmatch.iml" filepath="$PROJECT_DIR$/ProjetoSpring-screenmatch-v2/screenmatch.iml" />
     </modules>
   </component>
 </project>
