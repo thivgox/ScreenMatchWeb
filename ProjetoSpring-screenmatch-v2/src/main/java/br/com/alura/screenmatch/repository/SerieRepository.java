@@ -28,4 +28,6 @@ public interface SerieRepository extends JpaRepository<Serie, Long> {
 
 
     List<Episodios> topEpSeries(Serie serie);
+
+    List<Serie> findTop5ByOrderByEpisodiosDataLancamentoDesc();
 }
