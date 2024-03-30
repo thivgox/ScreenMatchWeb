@@ -109,4 +109,8 @@ public class Episodios {
                 ", avaliacao=" + avaliacao +
                 ", dataLancamento=" + dataLancamento;
     }
+
+    public Integer getNumeroEpisodio() {
+        return numero;
+    };
 }
